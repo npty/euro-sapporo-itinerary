@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro's Sapporo Itinerary - June 14, 2026</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --primary-color: #bb86fc;
+            --secondary-color: #03dac6;
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-color: #cf6679;
+            --soft-green: #81c784;
+            --soft-blue: #64b5f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .date-subtitle {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #333;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: 2px solid var(--bg-color);
+        }
+
+        .time {
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .activity {
+            font-weight: 500;
+            display: block;
+        }
+
+        .details {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Medication Checklist */
+        .med-card {
+            background: var(--surface-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+
+        .med-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        .med-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 6px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .med-info {
+            flex-grow: 1;
+        }
+
+        .med-name {
+            font-weight: 600;
+            display: block;
+        }
+
+        .med-schedule {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+        }
+
+        /* Dinner Recommendations */
+        .dinner-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .dinner-card {
+            background: var(--surface-color);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .dinner-card:hover {
+            transform: translateY(-2px);
+            background: #252525;
+        }
+
+        .restaurant-name {
+            color: var(--secondary-color);
+            font-weight: bold;
+            display: block;
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            background: #333;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-subtitle">Sunday, June 14, 2026</div>
+            <h1>Sapporo Itinerary</h1>
+            <p style="color: var(--soft-blue);">Eye-Care Optimized Theme</p>
+        </header>
+
+        <section id="medication">
+            <h2>Eye Care Protocol</h2>
+            <div class="med-card">
+                <div class="med-item">
+                    <div class="checkbox"></div>
+                    <div class="med-info">
+                        <span class="med-name">Antibiotic Drops</span>
+                        <span class="med-schedule">08:00 • 13:00 • 18:00 • 22:00</span>
+                    </div>
+                </div>
+                <div class="med-item">
+                    <div class="checkbox"></div>
+                    <div class="med-info">
+                        <span class="med-name">Anti-inflammatory Drops</span>
+                        <span class="med-schedule">09:00 • 21:00</span>
+                    </div>
+                </div>
+                <div class="med-item">
+                    <div class="checkbox"></div>
+                    <div class="med-info">
+                        <span class="med-name">Artificial Tears</span>
+                        <span class="med-schedule">Every 2 hours or as needed</span>
+                    </div>
+                </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--accent-color); text-align: center;">⚠️ Avoid bright screens and direct sunlight</p>
+        </section>
+
+        <section id="timeline">
+            <h2>Yurigahara Park Visit</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="time">10:00 AM</span>
+                    <span class="activity">Arrival at Yurigahara Park</span>
+                    <span class="details">Take the Gakuen-Toshi Line from Sapporo Station.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">10:30 AM</span>
+                    <span class="activity">Lily Train Ride</span>
+                    <span class="details">Scenic tour around the park's world-class lily collection.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">11:30 AM</span>
+                    <span class="activity">World Garden Walk</span>
+                    <span class="details">Relaxed stroll through the sunken garden and rock garden.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">01:00 PM</span>
+                    <span class="activity">Lunch & Rest</span>
+                    <span class="details">Rest eyes in the park cafe before heading back.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="dinner">
+            <h2>Soup Curry Dinner</h2>
+            <div class="dinner-grid">
+                <div class="dinner-card">
+                    <span class="restaurant-name">Suage+</span>
+                    <span class="tag">TOP RATED</span>
+                    <p class="details">Famous for crispy charcoal-grilled skewers in rich broth.</p>
+                </div>
+                <div class="dinner-card">
+                    <span class="restaurant-name">Garaku</span>
+                    <span class="tag">TRADITIONAL</span>
+                    <p class="details">Known for its complex spices and tender braised pork belly.</p>
+                </div>
+                <div class="dinner-card">
+                    <span class="restaurant-name">Yellow</span>
+                    <span class="tag">CREAMY</span>
+                    <p class="details">Unique coconut-milk based soup curry with a silky finish.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Built for Euro • Take care of your eyes!
+        </footer>
+    </div>
+</body>
+</html>
